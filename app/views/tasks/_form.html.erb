@@ -12,8 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name %><span>&nbsp &nbsp &nbsp</span>
     <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %>
+    <%= check_box "task","completed", {}, true, false %>
   </div>
   <div class="actions">
     <%= f.submit %>
