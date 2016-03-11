@@ -4,12 +4,16 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    sleep 1
+    @incomplete_tasks = Task.where(completed: false)
+    @completed_tasks = Task.where(completed: true)
   end
 
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+    @jet = params[:eric]
+    @man = params[:et]
   end
 
   # GET /tasks/new
