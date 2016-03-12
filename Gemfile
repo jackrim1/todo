@@ -40,7 +40,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'awesome_print'
   gem 'rubocop', require: false
-  gem 'meta_request'
+  gem 'chrome_logger', require: 'chrome_logger/railtie'
+  # gem 'meta_request'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
