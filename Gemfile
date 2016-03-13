@@ -35,13 +35,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # gem 'byebug'
-  gem 'pry'
-  gem 'pry-byebug'
+  # gem 'pry'
+  gem 'pry-byebug', '=1.3.3'
+  gem 'pry-stack_explorer'
+  gem 'pry-remote'
+  gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'awesome_print'
   gem 'rubocop', require: false
   gem 'chrome_logger', require: 'chrome_logger/railtie'
-  # gem 'meta_request'
+  gem 'meta_request' # used by rails panel in chrome-dev
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
