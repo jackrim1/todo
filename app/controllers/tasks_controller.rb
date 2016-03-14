@@ -16,7 +16,6 @@ class TasksController < ApplicationController
     @jet = params[:eric]
     @man = params[:et]
   end
-
   # GET /tasks/new
   def new
     @task = Task.new
