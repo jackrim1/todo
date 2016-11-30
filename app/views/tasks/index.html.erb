@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
-<h1>Check List</h1>
+
+<div class="row">User info, basic controls</div>
+
+<div class="flex-grid">
+
+
+  <div class="col">
+  <h1>Check List</h1>
 <%= link_to "New Task", new_task_path, id: "new_link", remote: true %>
 <h2>Incomplete</h2>
 <div id="incomplete_tasks" class="tasks">
@@ -11,4 +18,25 @@
   <% if @completed_tasks  %>
   <%= render @completed_tasks %>
   <% end %>
+</div>
+</div>
+
+
+<div class="col">
+  <h1>Check List</h1>
+<%= link_to "New Task", new_task_path, id: "new_link", remote: true %>
+<h2>Incomplete</h2>
+<div id="incomplete_tasks" class="tasks">
+  <%= render @incomplete_tasks %>
+</div>
+
+<h2>Complete</h2>
+<div id="complete_tasks" class="tasks">
+  <% if @completed_tasks  %>
+  <%= render @completed_tasks %>
+  <% end %>
+</div>
+</div>
+
+
 </div>

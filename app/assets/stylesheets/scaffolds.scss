@@ -1,3 +1,22 @@
+.flex-grid {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+   flex-direction: row;
+}
+
+.row {
+  background-color: gray;
+  margin: 2px;
+  padding: 5px;
+}
+
+.col {
+  flex: 1;
+  background-color: gray;
+  margin: 2px;
+}
+
 body {
   background-color: #fff;
   color: #333;
